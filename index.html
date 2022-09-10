@@ -422,68 +422,64 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
+        <div class="footer-form">
           <p class="footer-form-title">Підпишіться на розсилку</p>
-          <div class="span-form">
-            <input class="footer-input" type="text" name="email" placeholder="E-mail" />
-            <span class="footer-button">
+          <form class="span-form">
+            <input class="footer-input" type="text" name="email" placeholder="E-mail" required />
+            
               <button class="footer-btn-form" type="submit">
                 Підписатися
                 <svg class="footer-form-icon">
                   <use href="./images/sprite.svg#icon-send"></use>
                 </svg>
               </button>
-            </span>
-          </div>
-        </form>
+            
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form>
           <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
-          <ul>
-            <li class="form-input">
-              <label for="name">
-                <span class="form-input-title">Ім'я</span>
-              </label>
-              <input class="input-box" type="text" name="name" id="name" />
+          <div class="form-input"><label for="name">
+            <span class="form-input-title">Ім'я</span>
+            </label>
+            <input class="input-box" type="text" name="name" id="name" required />
 
-              <svg class="icon-form">
-                <use href="/images/sprite.svg#icon-person"></use>
-              </svg>
-            </li>
-            <li class="form-input">
-              <label for="phone">
-                <span class="form-input-title">Телефон</span>
-              </label>
-              <input class="input-box" type="text" name="phone" id="phone" />
-              <svg class="icon-form">
-                <use href="/images/sprite.svg#icon-phone"></use>
-              </svg>
-            </li>
-            <li class="form-input">
-              <label for="email">
-                <span class="form-input-title">Пошта</span>
-              </label>
-              <input class="input-box" type="text" name="email" id="email" />
-              <svg class="icon-form">
-                <use href="/images/sprite.svg#icon-email"></use>
-              </svg>
-            </li>
-            <li class="form-input">
-              <label for="comment">
-                <span class="form-input-title">Коментар</span>
-              </label>
-              <textarea
-                name="comment"
-                id="comment"
-                class="comment-box"
-                placeholder="Введіть текст"
-              ></textarea>
-            </li>
-          </ul>
-
+            <svg class="icon-form">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="form-input">
+            <label for="phone">
+              <span class="form-input-title">Телефон</span>
+            </label>
+            <input class="input-box" type="text" name="phone" id="phone" required />
+            <svg class="icon-form">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="form-input">
+            <label for="email">
+              <span class="form-input-title">Пошта</span>
+            </label>
+            <input class="input-box" type="text" name="email" id="email" required />
+            <svg class="icon-form">
+              <use href="./images/sprite.svg#icon-email"></use>
+            </svg>
+          </div>
+          <div class="form-input form-input-comment ">
+            <label for="comment">
+              <span class="form-input-title">Коментар</span>
+            </label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="comment-box"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>  
           <div class="accept">
             <label class="checkbox-accept" for="checkbox">
               <input
@@ -491,15 +487,14 @@
                 name="checkbox"
                 id="checkbox"
                 class="accept-item visually-hidden"
+                required
               />
               <svg class="form-checkbox-icon">
                 <use class="form-checkbox-icon-bird" href="./images/sprite.svg#icon-bird"></use>
               </svg>
-
               Погоджуюся з розсилкою та приймаю &#32 <a class="accept-link" href="">Умови договору</a>
             </label>
           </div>
-
           <button type="submit" class="button-submit">Відправити</button>
         </form>
         <button type="button" class="modal-close" data-modal-close>
